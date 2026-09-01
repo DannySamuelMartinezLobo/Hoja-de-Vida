@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+          content="Hoja de vida profesional de Danny Samuel Martínez Lobo. Estadística, Ciencia de Datos, Matemáticas, Actuaría, docencia e investigación.">
+
     <title>Hoja de Vida | Danny Samuel Martínez Lobo</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -17,246 +21,532 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f4f7fa;
-            color: #28323c;
+            background-color: #f4f7fb;
+            color: #263238;
             line-height: 1.7;
         }
 
-        /* ENCABEZADO */
+
+        /* ==================================================
+           PORTADA
+        ================================================== */
 
         header {
             min-height: 90vh;
-            background: linear-gradient(135deg, #0b2447, #19376d, #576cbc);
+            background: linear-gradient(
+                135deg,
+                #081b33,
+                #123c69,
+                #1d6fa5
+            );
+
             color: white;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             text-align: center;
-            padding: 40px 20px;
+
+            padding: 50px 20px;
         }
+
 
         .portada {
             max-width: 900px;
         }
 
+
         .foto-perfil {
-            width: 180px;
-            height: 180px;
+
+            width: 210px;
+            height: 210px;
+
+            object-fit: cover;
+            object-position: center;
+
             border-radius: 50%;
-            margin: auto;
+
+            border: 6px solid rgba(255,255,255,0.9);
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,0.35);
+
             margin-bottom: 25px;
-            background: white;
-            color: #19376d;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 45px;
-            font-weight: bold;
-            border: 6px solid rgba(255,255,255,.4);
-            box-shadow: 0 10px 30px rgba(0,0,0,.25);
         }
+
 
         header h1 {
+
             font-size: 48px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
+
 
         header h2 {
+
             font-size: 23px;
             font-weight: normal;
+
             margin-bottom: 25px;
+
+            color: #dceeff;
         }
+
 
         .descripcion-portada {
+
             font-size: 18px;
+
             max-width: 760px;
+
             margin: auto;
-            opacity: .95;
+
+            color: #f1f7fc;
         }
 
-        /* MENÚ */
+
+        /* ==================================================
+           MENÚ
+        ================================================== */
 
         nav {
-            background: #081b33;
-            padding: 16px;
+
+            background-color: #07192e;
+
             text-align: center;
+
+            padding: 16px;
+
             position: sticky;
+
             top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,.2);
+
+            z-index: 1000;
+
+            box-shadow:
+                0 3px 12px rgba(0,0,0,0.25);
         }
+
 
         nav a {
+
             color: white;
+
             text-decoration: none;
-            margin: 0 15px;
+
+            margin: 0 12px;
+
             font-weight: bold;
+
+            font-size: 15px;
         }
+
 
         nav a:hover {
-            color: #8ed7ff;
+
+            color: #67c7ff;
         }
 
-        /* CONTENIDO */
+
+        /* ==================================================
+           SECCIONES GENERALES
+        ================================================== */
 
         section {
+
             max-width: 1100px;
+
             margin: 40px auto;
-            background: white;
-            border-radius: 14px;
+
+            background-color: white;
+
             padding: 45px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
         }
+
 
         section h2 {
-            color: #19376d;
+
             font-size: 30px;
+
+            color: #123c69;
+
             margin-bottom: 25px;
+
             padding-bottom: 10px;
-            border-bottom: 3px solid #576cbc;
+
+            border-bottom: 3px solid #1d6fa5;
         }
 
+
         h3 {
-            color: #19376d;
+
+            color: #123c69;
+
             margin-bottom: 8px;
         }
 
+
         p {
-            margin-bottom: 14px;
+
+            margin-bottom: 13px;
         }
 
-        /* TARJETAS */
+
+        strong {
+
+            color: #123c69;
+        }
+
+
+        a {
+
+            color: #1769aa;
+        }
+
+
+        /* ==================================================
+           TARJETAS DE CIFRAS
+        ================================================== */
 
         .estadisticas {
+
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+
             gap: 20px;
+
+            margin-top: 25px;
         }
+
 
         .tarjeta {
-            background: #edf3ff;
-            border-radius: 12px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #edf5fc,
+                    #f7fbff
+                );
+
             padding: 25px;
+
+            border-radius: 12px;
+
             text-align: center;
-            transition: .3s;
+
+            border-top: 4px solid #1d6fa5;
+
+            transition: 0.3s;
         }
+
 
         .tarjeta:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 8px 22px rgba(0,0,0,0.12);
         }
+
 
         .numero {
-            font-size: 38px;
-            color: #19376d;
+
+            font-size: 40px;
+
             font-weight: bold;
+
+            color: #123c69;
         }
 
-        /* FORMACIÓN */
+
+        /* ==================================================
+           ITEMS FORMACIÓN / EXPERIENCIA
+        ================================================== */
 
         .item {
-            padding: 20px;
-            margin-bottom: 18px;
-            border-left: 5px solid #576cbc;
-            background: #f8faff;
-            border-radius: 6px;
+
+            padding: 22px;
+
+            margin-bottom: 20px;
+
+            background-color: #f8fbfe;
+
+            border-left: 5px solid #1d6fa5;
+
+            border-radius: 8px;
         }
 
-        /* LISTAS */
 
-        ul, ol {
+        .universidad {
+
+            font-weight: bold;
+
+            color: #3b5368;
+
+            font-size: 17px;
+        }
+
+
+        ul,
+        ol {
+
             margin-left: 25px;
+
             margin-top: 10px;
         }
 
+
         li {
+
             margin-bottom: 8px;
         }
 
-        /* GALERÍA */
 
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
+        /* ==================================================
+           PUBLICACIONES
+        ================================================== */
+
+        .publicacion {
+
+            margin-bottom: 22px;
+
+            padding: 22px;
+
+            background-color: #f8fbfe;
+
+            border-radius: 10px;
+
+            border-left: 5px solid #315d85;
         }
 
-        .foto-placeholder {
-            height: 220px;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #dce6f5, #edf3ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #19376d;
+
+        .publicacion h3 {
+
+            font-size: 18px;
+
+            line-height: 1.5;
+        }
+
+
+        .doi {
+
+            display: inline-block;
+
+            margin-top: 8px;
+
+            padding: 8px 14px;
+
+            border-radius: 6px;
+
+            text-decoration: none;
+
+            background-color: #e8f2fa;
+
+            color: #123c69;
+
             font-weight: bold;
-            padding: 20px;
         }
 
-        /* YOUTUBE */
+
+        .doi:hover {
+
+            background-color: #d7eaf8;
+        }
+
+
+        /* ==================================================
+           YOUTUBE
+        ================================================== */
 
         .youtube {
-            background: #fff5f5;
-            padding: 30px;
-            border-radius: 14px;
+
             text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff7f7,
+                    #ffffff
+                );
+
+            padding: 35px;
+
+            border-radius: 14px;
         }
+
 
         .boton-youtube {
+
             display: inline-block;
-            margin-top: 20px;
+
+            margin-top: 15px;
+
             padding: 14px 25px;
-            background: #ff0000;
+
+            background-color: #e62117;
+
             color: white;
+
             text-decoration: none;
-            border-radius: 8px;
+
             font-weight: bold;
-            transition: .3s;
+
+            border-radius: 8px;
+
+            transition: 0.3s;
         }
+
 
         .boton-youtube:hover {
-            background: #c90000;
-            transform: scale(1.04);
+
+            background-color: #ba1811;
+
+            transform: scale(1.03);
         }
 
-        /* CONTACTO */
+
+        /* ==================================================
+           ORCID
+        ================================================== */
+
+        .orcid {
+
+            display: inline-block;
+
+            margin-top: 10px;
+
+            background-color: #a6ce39;
+
+            color: #173400;
+
+            padding: 12px 20px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+
+        .orcid:hover {
+
+            background-color: #94bc27;
+        }
+
+
+        /* ==================================================
+           CONTACTO
+        ================================================== */
 
         .contacto {
+
             text-align: center;
         }
 
-        /* PIE */
+
+        .correo {
+
+            display: inline-block;
+
+            background-color: #123c69;
+
+            color: white;
+
+            padding: 12px 20px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            margin-top: 8px;
+        }
+
+
+        .correo:hover {
+
+            background-color: #1d6fa5;
+        }
+
+
+        /* ==================================================
+           PIE DE PÁGINA
+        ================================================== */
 
         footer {
-            background: #081b33;
+
+            background-color: #07192e;
+
             color: white;
-            padding: 30px;
+
             text-align: center;
+
+            padding: 30px;
+
             margin-top: 50px;
         }
 
-        /* CELULARES */
+
+        footer p {
+
+            margin: 4px;
+        }
+
+
+        /* ==================================================
+           ADAPTACIÓN A CELULARES
+        ================================================== */
 
         @media (max-width: 700px) {
 
+            header {
+
+                min-height: 80vh;
+            }
+
+
             header h1 {
+
                 font-size: 34px;
             }
 
+
             header h2 {
-                font-size: 19px;
+
+                font-size: 18px;
             }
 
+
+            .foto-perfil {
+
+                width: 170px;
+                height: 170px;
+            }
+
+
             section {
+
                 margin: 20px 12px;
+
                 padding: 28px 22px;
             }
 
+
             nav a {
+
                 display: inline-block;
-                margin: 6px 8px;
-                font-size: 14px;
+
+                margin: 5px 7px;
+
+                font-size: 13px;
             }
 
         }
@@ -266,29 +556,42 @@
 </head>
 
 
+
 <body>
 
 
-<!-- PORTADA -->
+
+<!-- ==================================================
+     PORTADA
+================================================== -->
 
 <header>
 
     <div class="portada">
 
-        <div class="foto-perfil">
-            DSM
-        </div>
+        <img
+            src="foto-danny.jpg"
+            alt="Danny Samuel Martínez Lobo"
+            class="foto-perfil"
+        >
 
-        <h1>Danny Samuel Martínez Lobo</h1>
+        <h1>
+            Danny Samuel Martínez Lobo
+        </h1>
 
         <h2>
-            Matemáticas • Estadística • Actuaría • Ciencia de Datos
+            Estadística • Ciencia de Datos • Matemáticas • Actuaría
         </h2>
 
         <p class="descripcion-portada">
-            Docente universitario, investigador y profesional con más de
-            15 años de experiencia. Actualmente Coordinador de la Maestría
-            en Estadística Aplicada y Ciencia de Datos.
+
+            Magíster en Ciencias - Estadística,
+            docente universitario, investigador y profesional
+            con más de 15 años de experiencia.
+
+            Actualmente Coordinador de la Maestría en
+            Estadística Aplicada y Ciencia de Datos.
+
         </p>
 
     </div>
@@ -296,124 +599,249 @@
 </header>
 
 
-<!-- MENÚ -->
+
+<!-- ==================================================
+     MENÚ
+================================================== -->
 
 <nav>
 
     <a href="#perfil">Perfil</a>
+
     <a href="#formacion">Formación</a>
+
     <a href="#experiencia">Experiencia</a>
+
     <a href="#investigacion">Investigación</a>
-    <a href="#galeria">Galería</a>
+
+    <a href="#publicaciones">Publicaciones</a>
+
     <a href="#youtube">YouTube</a>
+
     <a href="#contacto">Contacto</a>
 
 </nav>
 
 
-<!-- PERFIL -->
+
+<!-- ==================================================
+     PERFIL PROFESIONAL
+================================================== -->
 
 <section id="perfil">
 
     <h2>Perfil Profesional</h2>
 
     <p>
+
         Soy <strong>Danny Samuel Martínez Lobo</strong>,
-        Licenciado en Matemáticas, Especialista en Estadística
-        y Especialista en Actuaría.
+        Licenciado en Matemáticas, Especialista en Estadística,
+        Especialista en Actuaría y Magíster en Ciencias - Estadística.
+
     </p>
 
+
     <p>
-        Cuento con más de <strong>15 años de experiencia profesional</strong>
-        en áreas relacionadas con matemáticas, estadística, educación,
+
+        Cuento con más de
+        <strong>15 años de experiencia profesional</strong>
+        en áreas relacionadas con matemáticas,
+        estadística, docencia universitaria,
         investigación, análisis de datos y gestión académica.
+
     </p>
 
-    <p>
-        Durante los últimos <strong>10 años</strong> me he desempeñado
-        como profesor en la <strong>Universidad El Bosque</strong>,
-        participando activamente en procesos de docencia universitaria,
-        investigación y formación de estudiantes.
-    </p>
 
     <p>
+
+        Durante los últimos
+        <strong>10 años</strong>
+        me he desempeñado como profesor en la
+        <strong>Universidad El Bosque</strong>,
+        participando en procesos de formación,
+        investigación y acompañamiento académico.
+
+    </p>
+
+
+    <p>
+
         Actualmente me desempeño como
-        <strong>Coordinador de la Maestría en Estadística Aplicada
-        y Ciencia de Datos</strong>, desde donde contribuyo a la formación
-        de profesionales en estadística, análisis de datos y ciencia de datos.
+        <strong>
+        Coordinador de la Maestría en Estadística Aplicada
+        y Ciencia de Datos
+        </strong>,
+        contribuyendo a la formación de profesionales
+        en estadística, modelamiento, análisis de datos
+        y ciencia de datos.
+
     </p>
 
 </section>
 
 
-<!-- DATOS DESTACADOS -->
+
+<!-- ==================================================
+     TRAYECTORIA EN CIFRAS
+================================================== -->
 
 <section>
 
-    <h2>Mi trayectoria en cifras</h2>
+    <h2>Trayectoria en cifras</h2>
 
     <div class="estadisticas">
 
-        <div class="tarjeta">
-            <div class="numero">15+</div>
-            <p>Años de experiencia profesional</p>
-        </div>
 
         <div class="tarjeta">
-            <div class="numero">10</div>
-            <p>Años de docencia en Universidad El Bosque</p>
+
+            <div class="numero">
+                15+
+            </div>
+
+            <p>
+                Años de experiencia profesional
+            </p>
+
         </div>
 
-        <div class="tarjeta">
-            <div class="numero">5</div>
-            <p>Artículos de investigación publicados</p>
-        </div>
 
         <div class="tarjeta">
-            <div class="numero">3</div>
-            <p>Áreas principales de formación</p>
+
+            <div class="numero">
+                10
+            </div>
+
+            <p>
+                Años como profesor en Universidad El Bosque
+            </p>
+
         </div>
+
+
+        <div class="tarjeta">
+
+            <div class="numero">
+                5
+            </div>
+
+            <p>
+                Artículos científicos publicados
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <div class="numero">
+                14+
+            </div>
+
+            <p>
+                Trabajos de grado de maestría dirigidos
+            </p>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <div class="numero">
+                5
+            </div>
+
+            <p>
+                Trabajos de grado de pregrado dirigidos
+            </p>
+
+        </div>
+
 
     </div>
 
 </section>
 
 
-<!-- FORMACIÓN -->
+
+<!-- ==================================================
+     FORMACIÓN ACADÉMICA
+================================================== -->
 
 <section id="formacion">
 
     <h2>Formación Académica</h2>
 
+
     <div class="item">
 
-        <h3>Licenciatura en Matemáticas</h3>
+        <h3>
+            Magíster en Ciencias - Estadística
+        </h3>
+
+        <p class="universidad">
+            Universidad Nacional de Colombia
+        </p>
 
         <p>
-            Formación profesional en matemáticas, pensamiento lógico,
-            resolución de problemas y educación matemática.
+            Formación avanzada en estadística,
+            inferencia, modelamiento,
+            análisis multivariado y análisis de datos.
         </p>
 
     </div>
 
+
     <div class="item">
 
-        <h3>Especialización en Estadística</h3>
+        <h3>
+            Especialista en Actuaría
+        </h3>
+
+        <p class="universidad">
+            Universidad Antonio Nariño
+        </p>
 
         <p>
-            Formación avanzada en métodos estadísticos,
-            inferencia, análisis de datos y modelamiento.
+            Formación especializada en análisis de riesgos,
+            modelos actuariales, probabilidad,
+            estadística y matemáticas financieras.
         </p>
 
     </div>
 
+
     <div class="item">
 
-        <h3>Especialización en Actuaría</h3>
+        <h3>
+            Especialista en Estadística
+        </h3>
+
+        <p class="universidad">
+            Universidad Industrial de Santander
+        </p>
 
         <p>
-            Formación en análisis de riesgos, modelos actuariales,
-            probabilidad, estadística y matemáticas financieras.
+            Formación especializada en métodos estadísticos,
+            inferencia, modelamiento y análisis de datos.
+        </p>
+
+    </div>
+
+
+    <div class="item">
+
+        <h3>
+            Licenciado en Matemáticas
+        </h3>
+
+        <p class="universidad">
+            Universidad Industrial de Santander
+        </p>
+
+        <p>
+            Formación profesional en matemáticas,
+            pensamiento lógico, resolución de problemas
+            y educación matemática.
         </p>
 
     </div>
@@ -421,34 +849,62 @@
 </section>
 
 
-<!-- EXPERIENCIA -->
+
+<!-- ==================================================
+     EXPERIENCIA PROFESIONAL
+================================================== -->
 
 <section id="experiencia">
 
     <h2>Experiencia Profesional</h2>
 
+
     <div class="item">
 
-        <h3>Universidad El Bosque</h3>
+        <h3>
+            Universidad El Bosque
+        </h3>
 
         <p>
             <strong>Profesor universitario</strong>
         </p>
 
         <p>
-            Más de 10 años de experiencia docente en educación superior.
+            Más de 10 años de experiencia en docencia universitaria.
         </p>
 
+
         <ul>
-            <li>Docencia universitaria.</li>
-            <li>Enseñanza de estadística y matemáticas.</li>
-            <li>Orientación y acompañamiento de estudiantes.</li>
-            <li>Desarrollo de actividades académicas.</li>
-            <li>Participación en proyectos de investigación.</li>
-            <li>Análisis estadístico y de datos.</li>
+
+            <li>
+                Docencia en estadística y matemáticas.
+            </li>
+
+            <li>
+                Formación y acompañamiento de estudiantes.
+            </li>
+
+            <li>
+                Análisis estadístico de datos.
+            </li>
+
+            <li>
+                Participación en procesos de investigación.
+            </li>
+
+            <li>
+                Dirección y acompañamiento de trabajos de grado.
+            </li>
+
+            <li>
+                Participación en actividades académicas
+                y de gestión universitaria.
+            </li>
+
         </ul>
 
     </div>
+
 
 
     <div class="item">
@@ -460,15 +916,34 @@
 
         <p>
             Actualmente participo en la coordinación académica
-            y administrativa del programa.
+            y gestión del programa de Maestría en Estadística Aplicada
+            y Ciencia de Datos.
         </p>
 
+
         <ul>
-            <li>Planeación académica.</li>
-            <li>Coordinación de profesores y estudiantes.</li>
-            <li>Gestión académica del programa.</li>
-            <li>Fortalecimiento de procesos de formación.</li>
-            <li>Promoción de la estadística y la ciencia de datos.</li>
+
+            <li>
+                Planeación y coordinación académica.
+            </li>
+
+            <li>
+                Acompañamiento a estudiantes y profesores.
+            </li>
+
+            <li>
+                Gestión de actividades académicas.
+            </li>
+
+            <li>
+                Fortalecimiento de procesos de investigación.
+            </li>
+
+            <li>
+                Promoción de la estadística aplicada
+                y la ciencia de datos.
+            </li>
+
         </ul>
 
     </div>
@@ -476,109 +951,291 @@
 </section>
 
 
-<!-- INVESTIGACIÓN -->
+
+<!-- ==================================================
+     INVESTIGACIÓN
+================================================== -->
 
 <section id="investigacion">
 
-    <h2>Investigación y Publicaciones</h2>
+    <h2>Investigación</h2>
 
     <p>
-        Como parte de mi trayectoria académica he participado
-        en diferentes procesos de investigación y cuento con
-        <strong>5 artículos de investigación publicados</strong>.
+
+        Mi trayectoria académica incluye actividades de
+        investigación, producción científica,
+        estadística aplicada y dirección de trabajos de grado.
+
     </p>
 
+
     <p>
-        Entre mis principales áreas de interés se encuentran:
+
+        He dirigido más de
+        <strong>14 trabajos de grado a nivel de maestría</strong>
+        y aproximadamente
+        <strong>5 trabajos de grado a nivel de pregrado</strong>.
+
     </p>
+
+
+    <h3>Principales áreas de interés</h3>
+
 
     <ul>
-        <li>Estadística aplicada.</li>
-        <li>Ciencia de datos.</li>
-        <li>Matemáticas.</li>
-        <li>Análisis estadístico.</li>
-        <li>Modelamiento.</li>
-        <li>Educación matemática.</li>
-        <li>Investigación académica.</li>
+
+        <li>
+            Estadística aplicada
+        </li>
+
+        <li>
+            Ciencia de datos
+        </li>
+
+        <li>
+            Machine Learning
+        </li>
+
+        <li>
+            Modelamiento estadístico
+        </li>
+
+        <li>
+            Análisis predictivo
+        </li>
+
+        <li>
+            Análisis multivariado
+        </li>
+
+        <li>
+            Educación estadística
+        </li>
+
+        <li>
+            Investigación aplicada
+        </li>
+
     </ul>
+
 
     <br>
 
-    <h3>Publicaciones</h3>
 
-    <ol>
-        <li>Artículo de investigación 1.</li>
-        <li>Artículo de investigación 2.</li>
-        <li>Artículo de investigación 3.</li>
-        <li>Artículo de investigación 4.</li>
-        <li>Artículo de investigación 5.</li>
-    </ol>
+    <h3>Identificación como investigador</h3>
+
+    <p>
+        Mi producción académica puede ser consultada
+        a través de mi perfil ORCID:
+    </p>
+
+
+    <a
+        class="orcid"
+        href="https://orcid.org/0009-0008-4470-5658"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        ORCID: 0009-0008-4470-5658
+
+    </a>
 
 </section>
 
 
-<!-- GALERÍA -->
 
-<section id="galeria">
+<!-- ==================================================
+     PUBLICACIONES
+================================================== -->
 
-    <h2>Galería</h2>
+<section id="publicaciones">
 
-    <p>
-        Algunos momentos representativos de mi trayectoria
-        académica, docente y profesional.
-    </p>
+    <h2>Publicaciones Científicas</h2>
 
-    <div class="galeria">
 
-        <div class="foto-placeholder">
-            📷
-            <br>
-            Foto profesional
-        </div>
+    <!-- PUBLICACIÓN 1 -->
 
-        <div class="foto-placeholder">
-            🎓
-            <br>
-            Actividad académica
-        </div>
+    <div class="publicacion">
 
-        <div class="foto-placeholder">
-            📊
-            <br>
-            Conferencias, clases o eventos
-        </div>
+        <h3>
+            Innovación en la evaluación de forrajes:
+            modelado de digestibilidad y energía metabolizable
+            con análisis de correlación canónico y random forest
+            en Colombia
+        </h3>
+
+        <p>
+            <strong>Innovaciencia, 2026</strong>
+        </p>
+
+        <a
+            class="doi"
+            href="https://doi.org/10.15649/2346075X.5664"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            DOI: 10.15649/2346075X.5664
+
+        </a>
+
+    </div>
+
+
+
+    <!-- PUBLICACIÓN 2 -->
+
+    <div class="publicacion">
+
+        <h3>
+            Ciencia de Datos en Educación Media:
+            Explorando Correlaciones y Prediciendo Resultados
+            Saber 11 a Partir del Proceso Formativo
+        </h3>
+
+        <p>
+            <strong>Comunicaciones en Estadística</strong>
+        </p>
+
+        <a
+            class="doi"
+            href="https://doi.org/10.15332/23393076.11820"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            DOI: 10.15332/23393076.11820
+
+        </a>
+
+    </div>
+
+
+
+    <!-- PUBLICACIÓN 3 -->
+
+    <div class="publicacion">
+
+        <h3>
+            Predictive Modeling in Triage Using Ordinal Logistic
+            Regression: A Study Based on the MIMIC-IV-ED Dataset
+        </h3>
+
+        <p>
+            <strong>Revista Ciencias Biomédicas, 2025</strong>
+        </p>
+
+        <a
+            class="doi"
+            href="https://doi.org/10.32997/rcb-2025-5945"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            DOI: 10.32997/rcb-2025-5945
+
+        </a>
+
+    </div>
+
+
+
+    <!-- PUBLICACIÓN 4 -->
+
+    <div class="publicacion">
+
+        <h3>
+            ¿Existen diferencias estadísticamente significativas
+            en los niveles de sorpresa según el efecto mágico utilizado?
+        </h3>
+
+        <p>
+            <strong>Comunicaciones en Estadística, 2025</strong>
+        </p>
+
+        <a
+            class="doi"
+            href="https://doi.org/10.15332/23393076.10766"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            DOI: 10.15332/23393076.10766
+
+        </a>
+
+    </div>
+
+
+
+    <!-- PUBLICACIÓN 5 -->
+
+    <div class="publicacion">
+
+        <h3>
+            Modelos predictivos en la clasificación de nacidos vivos
+            y mortinatos: un estudio comparativo entre técnicas de
+            machine learning y regresión logística en función de
+            variables sociodemográficas y clínicas
+        </h3>
+
+        <p>
+            <strong>Revista Ciencias Biomédicas, 2024</strong>
+        </p>
+
+        <a
+            class="doi"
+            href="https://doi.org/10.32997/rcb-2024-4940"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            DOI: 10.32997/rcb-2024-4940
+
+        </a>
 
     </div>
 
 </section>
 
 
-<!-- YOUTUBE -->
+
+<!-- ==================================================
+     CANAL DE YOUTUBE
+================================================== -->
 
 <section id="youtube">
 
-    <h2>Divulgación académica en YouTube</h2>
+    <h2>Divulgación Académica</h2>
+
 
     <div class="youtube">
 
-        <h3>Canal de contenidos de Estadística</h3>
+        <h3>
+            Canal de YouTube
+        </h3>
+
 
         <p>
-            Como parte de mi actividad docente y de divulgación académica,
-            cuento con un canal de YouTube donde comparto contenidos
-            relacionados con estadística, matemáticas y análisis de datos.
+
+            Como parte de mi actividad docente
+            y de divulgación académica,
+            comparto contenidos relacionados con
+            estadística, matemáticas,
+            análisis de datos y temas de interés académico.
+
         </p>
 
+
         <p>
-            Allí presento conceptos, ejercicios y recursos educativos
-            dirigidos principalmente a estudiantes y personas interesadas
-            en aprender estadística.
+
+            Estos recursos están dirigidos principalmente
+            a estudiantes y personas interesadas
+            en fortalecer sus conocimientos en estadística.
+
         </p>
+
 
         <a
             class="boton-youtube"
             href="https://www.youtube.com/channel/UCnzrnK4SyFNCxEDzyl73ihA"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
 
             ▶ Visitar mi canal de YouTube
 
@@ -589,20 +1246,26 @@
 </section>
 
 
-<!-- CONTACTO -->
 
-<section id="contacto" class="contacto">
+<!-- ==================================================
+     CONTACTO
+================================================== -->
+
+<section
+    id="contacto"
+    class="contacto"
+>
 
     <h2>Contacto</h2>
 
-    <h3>Danny Samuel Martínez Lobo</h3>
+
+    <h3>
+        Danny Samuel Martínez Lobo
+    </h3>
+
 
     <p>
-        Licenciado en Matemáticas
-    </p>
-
-    <p>
-        Especialista en Estadística
+        Magíster en Ciencias - Estadística
     </p>
 
     <p>
@@ -610,18 +1273,76 @@
     </p>
 
     <p>
-        Profesor – Universidad El Bosque
+        Especialista en Estadística
     </p>
+
+    <p>
+        Licenciado en Matemáticas
+    </p>
+
+
+    <br>
+
+
+    <p>
+        <strong>
+            Universidad El Bosque
+        </strong>
+    </p>
+
 
     <p>
         Coordinador de la Maestría en Estadística Aplicada
         y Ciencia de Datos
     </p>
 
+
+    <br>
+
+
+    <p>
+        <strong>
+            Correo electrónico
+        </strong>
+    </p>
+
+
+    <a
+        class="correo"
+        href="mailto:danny.lobo@hotmail.com">
+
+        ✉ danny.lobo@hotmail.com
+
+    </a>
+
+
+    <br><br>
+
+
+    <p>
+        <strong>
+            Perfil ORCID
+        </strong>
+    </p>
+
+
+    <a
+        class="orcid"
+        href="https://orcid.org/0009-0008-4470-5658"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        ORCID: 0009-0008-4470-5658
+
+    </a>
+
 </section>
 
 
-<!-- PIE DE PÁGINA -->
+
+<!-- ==================================================
+     PIE DE PÁGINA
+================================================== -->
 
 <footer>
 
@@ -634,6 +1355,7 @@
     </p>
 
 </footer>
+
 
 
 </body>
